@@ -1,10 +1,12 @@
 package com.kkumteul.domain.event.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.kkumteul.domain.event.dto.EventRequestDto;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -23,6 +25,9 @@ public class Event {
 
     private LocalDateTime startDate;
     private LocalDateTime expiredDate;
+
+    @OneToMany(mappedBy = "event")
+    List<JoinEvent> joinEventList = new ArrayList<>();
 
     @Builder
     public Event(String name, String description, LocalDateTime startDate, LocalDateTime expiredDate) {
