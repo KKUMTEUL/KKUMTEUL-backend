@@ -45,4 +45,12 @@ public class BookLike {
         this.book = book;
         this.updatedAt = updatedAt;
     }
+
+    public void updateLikeType(LikeType type){
+        this.likeType = type;
+    }
+
+    public void updateUpdateAt(){
+        this.updatedAt = LocalDateTime.now();
+    }
 }

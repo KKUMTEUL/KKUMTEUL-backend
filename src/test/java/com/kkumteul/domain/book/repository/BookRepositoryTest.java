@@ -1,4 +1,4 @@
-package com.kkumteul.book.repository;
+package com.kkumteul.domain.book.repository;
 
 import com.kkumteul.domain.book.entity.Book;
 import com.kkumteul.domain.book.entity.BookTopic;

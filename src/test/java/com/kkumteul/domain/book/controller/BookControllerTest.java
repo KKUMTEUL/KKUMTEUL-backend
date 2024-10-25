@@ -1,4 +1,4 @@
-package com.kkumteul.book.controller;
+package com.kkumteul.domain.book.controller;
 
 import com.kkumteul.domain.book.controller.BookController;
 import com.kkumteul.domain.book.dto.GetBookListResponseDto;

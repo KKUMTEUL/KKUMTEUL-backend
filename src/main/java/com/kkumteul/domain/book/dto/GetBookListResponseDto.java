@@ -13,8 +13,8 @@ import java.util.List;
 public class GetBookListResponseDto {
     private Long bookId;
     private String bookTitle;
-    private byte[] bookImage; // 또는 String으로 바꿔서 이미지 URL을 저장할 수도 있습니다.
-    private List<String> topicNames; // Topic 이름 리스트
+    private byte[] bookImage;
+    private List<String> topicNames;
 
     public static GetBookListResponseDto from(final Book book) {
         final GetBookListResponseDto bookListResponseDto = new GetBookListResponseDto();
